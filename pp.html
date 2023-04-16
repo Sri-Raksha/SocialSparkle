@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entrepreneur Profile</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+			letter-spacing: 2px;
+		}
+		h2 {
+			font-size: 24px;
+			font-weight: normal;
+			margin-bottom: 20px;
+		}
+		p {
+			margin: 0 0 20px 0;
+			line-height: 1.5;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.profile-pic {
+			flex: 0 0 200px;
+			margin-right: 20px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.profile-pic img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.bio {
+			flex: 1;
+			max-width: 600px;
+		}
+		.contact {
+			flex: 0 0 300px;
+			margin-top: 20px;
+		}
+		.contact h2 {
+			margin-top: 0;
+		}
+		.contact ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.contact li {
+			margin-bottom: 10px;
+		}
+		.contact li a {
+			color: #333;
+			text-decoration: none;
+		}
+		.contact li a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Entrepreneur Profile</h1>
+	</header>
+	<div class="container">
+		<div class="profile-pic">
+			<img src="img/pp.jpeg" alt="Profile Picture">
+		</div>
+		<div class="bio">
+			<h2>John Doe</h2>
+			<p>John is an entrepreneur and startup founder based in San Francisco. He has a background in computer science and has previously worked at Google and Facebook. In 2015, he founded his own company, which has since grown to over 50 employees and raised $10 million in funding.</p>
+			<p>John is passionate about using technology to solve real-world problems and is always looking for new opportunities to innovate and disrupt existing industries.</p>
+		</div>
+		<div class="contact" style="margin-left: 50px;">
+			<h2>Contact</h2>
+			<ul>
+				<li><a href="mailto:john@example.com">john@example.com</a></li>
+				<li><a href="https://twitter.com/johndoe" target="_blank">Twitter</a></li>
+				<li><a href="https://www.linkedin.com/in/johndoe/" target="_blank">LinkedIn</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+	<title>Events Page</title>
+
+<style>
+    /* General Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+section {
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.button {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #666;
+}
+
+footer {
+	background-color: #eee;
+	padding: 30px;
+	text-align: center;
+}
+
+.chatbox {
+    position: absolute;
+    bottom: 5px;
+    margin-bottom: -40px;
+    margin-right: -130px;
+    right: 5px;
+}
+
+.log {
+    color: #333;
+    font-weight: 500;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h3><a href="index.html" class="log"><b>socialsparkle</b></a></h3>
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                <input type="search" placeholder="search for creators, insprations and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+	<main>
+		<section>
+			<h2>Event 1</h2>
+			<p>Date: January 1, 2024</p>
+			<p>Time: 10:00 AM - 12:00 PM</p>
+			<p>Location: 123 Main Street</p>
+			<p>Description: India first Entrepreneur's meet</p><br>
+			<a href="#" class="button">Register Now</a>
+		</section>
+
+		<section>
+			<h2>Event 2</h2>
+			<p>Date: February 1, 2024</p>
+			<p>Time: 2:00 PM - 4:00 PM</p>
+			<p>Location: 456 Main Street</p>
+			<p>Description: Asia's Biggest Fair</p><br>
+			<a href="#" class="button">Register Now</a>
+		</section>
+
+        <!-- chatbot -->
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Chat support</h4>
+                            <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Write a message...">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="./images/chatbox-icon.svg" /></button>
+                </div>
+            </div>
+        </div>
+	</main>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
